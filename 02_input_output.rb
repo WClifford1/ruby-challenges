@@ -27,9 +27,25 @@ name = gets.chomp
 system('clear')
 puts "Hi #{name}! How old are you?"
 age = gets.to_i
+
+if
+age > 100
+system('clear')
+puts "Congratulations #{name}! You are over 100 years old!"
+puts 
+   
+elsif
+    age == 100
+system('clear')
+puts "Congratulations #{name}! You are 100 years old!" 
+puts
+
+else    
 centarian = 100 - age
 system('clear')
+
 puts "Wow! You are #{age} years old. Congratulations!"
 puts
 puts "#{name}, in #{centarian} years you will be 100 years old!"
 puts
+end
