@@ -19,6 +19,11 @@
 * 01_ruby_intro
 * 02_input_output
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 * 03_largest_number
 >>>>>>> da4dd559766a8de215b1be280af0bb4c15966aa5
+=======
+* 03_largest_number
+* 04_sum_numbers
+>>>>>>> 04_sum_numbers
