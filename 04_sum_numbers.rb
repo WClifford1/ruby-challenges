@@ -10,10 +10,23 @@
 # Check your solution by running the tests:
 # ruby tests/04_sum_numbers_test.rb
 
+#defines the method
 def sum_numbers (numbers)
-  # Your code here
+
+#starts sum_numbers at 0
+sum_numbers = 0
+
+#goes through each element in the array, gets the number and adds it to sum_numbers
+numbers.each do |element|
+  
+  sum_numbers = element + sum_numbers
+  
 end
 
+#returns the data for testing
+return sum_numbers
+
+end
 
 # OPTIONAL:
 # Go to the tests folder and open 04_sum_numbers_test.rb.
