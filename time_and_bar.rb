@@ -1,29 +1,95 @@
-# There are three parts to this challenge and remember to push your solution.
+system('clear')
 
-# PART 1:
-# - Create a well named variable that contains the amount of time it took you to get to class
-# - Create a complete sentence  that lets us know how you got to class and how long it took
-# - Print this complete sentence
+class Part1
+    attr_accessor :commuteTime
+    def initialize
+        @commuteTime = commuteTime
+    end
 
+    def output
+        @commuteTime = 15
+        return "I rode my motorbike into work and parked on one of the sidestreets nearby, it took me no more than #{commuteTime} minutes to get to class."
+    end
+end
 
-# PART 2:
-# You are working at a bar where you have a current backlog of drinks to make:
-# 3 cocktails
-# 2 waters
-# and
-# 6 beers
-
-# Write a program that asks the customer for their order.
-#   if they order a cocktail, add one to the number of cocktails you need to make,
-#   if they order a water, add one to the number of waters you need to make,
-#   if they order a beer, add one to the number of beers you need to pour
-
-# Print the final drinks order so you know what to make
+commute = Part1.new
+puts commute.output
+puts
+puts "I have commented out the second and third parts of the question in the class below. Please uncomment them to read, thank you"
+puts
 
 
-# Part Three:
-# Cocktails sell for $22, and cost $8 to make
-# Beer sell for $12, and cost $3 to pour
-# Water sell for $6, and cost $0.15 to make
 
-# Print out the total profit for the orders you have
+=begin
+#Define the program as a class
+class Part2
+
+#Add attr_accessor attribute to the variables so that they can be read and changed
+attr_accessor :waterNumber, :beerNumber, :cocktailNumber
+
+#Initialize the variables used in the program as instance varaibles
+    def initialize
+        
+        @waterNumber = waterNumber
+        @beerNumber = beerNumber
+        @cocktailNumber = cocktailNumber
+    end
+
+#Define a method for getting the customer's order and modifying the drink order backlog
+    def customerOrder
+        @cocktailNumber = 3
+        @waterNumber = 2
+        @beerNumber = 6
+        puts "Which drink do you want?"
+        puts
+        drink = gets.chomp
+        drink.downcase!
+            
+            #Add if / else conditions for what the user types in.
+            #Asks the user what drink they want, how many, adds this to the total
+            if
+                drink.include? "cocktail"
+                puts "How many cocktails do you want?"
+                puts
+                @cocktailNumber += gets.to_i
+            
+            elsif
+                drink.include? "water"
+                puts "How many waters do you want?"
+                puts
+                @waterNumber += gets.to_i
+            
+            elsif
+                drink.include? "beer"
+                puts "How many beers do you want?"
+                puts
+                @beerNumber += gets.to_i
+            
+            else 
+                drink != "water" or "beer" or "cocktail"
+                puts "We don't sell that, we only sell cocktails, beers, or waters"
+                puts
+            end
+    
+    puts
+    return "You have #{@cocktailNumber} cocktails, #{@waterNumber} waters and #{@beerNumber} beers to make"
+    
+    end
+
+#Create a method which calculates the profit on the number of drinks sold
+#From the question we know cocktails make $8 profit, waters $5.85 and beers $9
+#The number of waters has to be changed to a float and made to have 2 decimal places
+    def profit
+        #The number of waters has to be changed to a float and made to have 2 decimal places
+        @waterNumber = @waterNumber.to_f
+        puts
+        return "You have made $#{@cocktailNumber * 8} profit on cocktails, $#{'%.2f' % (@waterNumber * 5.85)} profit on waters, and $#{@beerNumber * 9} profit on beers"
+    end
+
+end
+
+#Create an instance of the class and run the methods
+part2 = Part2.new
+puts part2.customerOrder
+puts part2.profit
+=end
