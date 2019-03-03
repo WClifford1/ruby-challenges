@@ -22,4 +22,9 @@ class UniqueTest < Test::Unit::TestCase
     assert_equal('A precious stone', definition.lookup('ruby'))
     assert_equal('Lorem ipsum', definition.lookup('rails'))
   end
+<<<<<<< HEAD
 end
+=======
+end
+
+>>>>>>> 07_included_once
