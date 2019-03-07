@@ -11,21 +11,16 @@
 # ruby tests/08_count_letters_test.rb
 
 def count_letters (string)
+
   newArray = []
   result = Hash.new(0)
 
   newArray = string.chars
 
-
   newArray.each do |letter|
     result[letter] += 1
   end
 
-  result.each { |letter, count| 
-  puts "#{letter} #{count}"
-  }
-
-  
 
   return result # return the hash
 end
