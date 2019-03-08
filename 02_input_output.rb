@@ -1,7 +1,7 @@
 # Write a program that accepts someone's name and age, and responds
 # as shown here:
 
-# Program is run and outputs:
+##Program is run and outputs:
 # "What is your name?"
 
 # User inputs: "Tom"
