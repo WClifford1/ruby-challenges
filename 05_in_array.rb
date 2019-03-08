@@ -3,7 +3,7 @@
 # Write a method called 'in_array' which will take 
 # two parameteres:
 # One as a string and one as an array of strings
-
+##
 # Return a boolean indicationg whether or not the
 # string is found in the array.
 
