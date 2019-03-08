@@ -4,7 +4,7 @@
 # 1. add_word(word, definition), should store a word and definition
 # 2. lookup(word), should return a definition
 # 3. total_words, should return the total number of words
-# 
+#
 # Example:
 # definition = Definition.new
 # definition.add_word('ruby', 'A red, precious stone')
