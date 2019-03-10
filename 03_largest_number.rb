@@ -17,7 +17,7 @@
 # Examples - what if both numbers are equal or are strings?
 =begin
 def largest_number (number_1, number_2)
-  # Your code here
+  ## Your code here
 end
 
 largest_number(100,50)
