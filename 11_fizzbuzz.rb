@@ -18,7 +18,7 @@
 
 # Check your solution by running: ruby 11_fizzbuzz.rb
 
-# Example:
+## Example:
 # 1
 # 2
 # Fizz
