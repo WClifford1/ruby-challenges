@@ -1,5 +1,5 @@
 # Definition
-# 
+# #
 # Extend the definition class to have three different methods:
 # 1. add_word(word, definition), should store a word and definition
 # 2. lookup(word), should return a definition
