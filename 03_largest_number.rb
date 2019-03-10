@@ -15,45 +15,29 @@
 # with your own examples and test corner cases.
 # 
 # Examples - what if both numbers are equal or are strings?
-=begin
+
+
+
 def largest_number (number_1, number_2)
-  # Your code here
-end
 
-largest_number(100,50)
-=end
-system('clear')
-puts "Enter your first number"
-puts
-
-num1 = gets.to_i
-if !num1.is_a(Numeric)
-  puts "Please enter a number"
-end
-puts
-puts "Enter your second number"
-puts
-num2 = gets.to_i
-puts
-
-
-if num1 > num2
-  puts
-  puts "#{num1} is larger"
   
-elsif 
-  num1 == num2
-  puts
-  puts "They are the same"
-  
-else num1 < num2
-  puts
-  puts "#{num2} is larger"
+  if
+    number_1 > number_2
+    puts number_1
 
+  elsif 
+    number_1 < number_2
+    puts number_2
 
+  else
+    number_1 == number_2
+    puts "They're the same"
+    
+  end
+
+    
 end
 
-
-
+largest_number(100,100)
 
 
