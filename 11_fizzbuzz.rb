@@ -29,24 +29,22 @@
 # Your code here
 
 def fizzbuzz
-counter = 0
 
-while counter < 100
-    counter += 1
-    if 
-        counter % (3 * 5) == 0
-        counter % 3 == 0
-        puts "fizzbuzz"
-    
-    elsif counter % 5 == 0
-        puts "buzz"
+    for i in 1..100
 
-    elsif counter % 3 == 0
-        puts "fizz"
+        case
 
-    else puts counter
+        when i % 15 == 0
+            puts "fizzbuzz"
+        when i % 3 == 0
+            puts "fizz"
+        when i % 5 == 0
+            puts "buzz"
+        else puts i.to_s
+
+        end
     end
-end
+
 end
 
 fizzbuzz
