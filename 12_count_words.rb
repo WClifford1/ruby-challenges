@@ -20,3 +20,30 @@
 # hi 3
 # hello 1
 # 1 2
+
+def solution
+
+    newArray = []
+    myHash = Hash.new(0)
+
+    string = gets.chomp
+    string.downcase!
+    
+    newArray = string.split
+
+    newArray.each do |word|
+        myHash[word] += 1
+    end
+
+    system ('clear')
+
+    myHash.each do |x,y|
+        puts "#{x} #{y}"
+    end
+
+end
+
+solution
+
+
+
