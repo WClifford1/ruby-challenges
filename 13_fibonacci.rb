@@ -18,7 +18,6 @@
 # nthFibonacci(0) -> 0
 # nthFibonacci(3) -> 2
 # nthFibonacci(6) -> 8
-system('clear')
 # Check your solution by running the tests:
 # ruby tests/13_fibonacci_test.rb
 
