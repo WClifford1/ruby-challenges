@@ -6,7 +6,7 @@
 # For example, the first seven Fibonacci numbers are: 0 1 1 2 3 5 8
 
 # Write a method that will return the nth number of the sequence.
-
+#
 # The syntax is easy, getting your head around the algorithm is the challenge.
 # Write the sequence on a piece of paper first and think about the steps
 # you take for each number. Translate this to pseudocode and then to ruby.
