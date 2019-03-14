@@ -20,6 +20,44 @@
 # Your code here
 
 
+def hackerman
+
+    system('clear')
+
+    #Asks for the first input and converts it to downcase
+    puts "Enter your first input"
+    firstString = gets.chomp
+    firstString.downcase!
+
+
+    #Asks for the second input and converts it to downcase
+    puts "Enter your second input"
+    secondString = gets.chomp
+    secondString.downcase!
+
+
+    #Converts the first input to an array of words
+    arr1 = firstString.split
+
+
+    #Loops through the first array, searching for words from the second string.
+    #Replaces those elements with "HIDDEN"
+    arr1.each do |x|
+        if secondString.include? x 
+            i = arr1.index(x)
+            arr1[i] = "HIDDEN"
+        end
+    end
+
+
+    #Prints the result
+    puts "#{arr1}"
+
+end
+
+hackerman
+
+
 
 # Beast mode:
 # Does your code deal with capital letters? Update your solution so that
