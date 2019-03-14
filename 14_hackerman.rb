@@ -5,7 +5,7 @@
 
 # However if any of the words in the second input match with a word from the
 # first input it should say "HIDDEN" instead of the matched word.
-
+#
 # Example:
 # first_input = bob rob dob mob
 # second_input = kob fob dob
