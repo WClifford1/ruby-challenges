@@ -16,36 +16,43 @@
 # ruby 14_hackerman.rb
 
 # Your code here
-system('clear')
 
-#Asks for the first input and converts it to downcase
-puts "First"
-firstString = gets.chomp
-firstString.downcase!
+def hackerman
 
+    system('clear')
 
-#Asks for the second input and converts it to downcase
-puts "Second"
-secondString = gets.chomp
-secondString.downcase!
+    #Asks for the first input and converts it to downcase
+    puts "Enter your first input"
+    firstString = gets.chomp
+    firstString.downcase!
 
 
-#Converts the first input to an array
-arr1 = firstString.split
+    #Asks for the second input and converts it to downcase
+    puts "Enter your second input"
+    secondString = gets.chomp
+    secondString.downcase!
 
 
-#Loops through the first array, searching for words from the second string.
-#Replaces those elements with "HIDDEN"
-arr1.each do |x|
-    if secondString.include? x 
-        i = arr1.index(x)
-        arr1[i] = "HIDDEN"
+    #Converts the first input to an array of words
+    arr1 = firstString.split
+
+
+    #Loops through the first array, searching for words from the second string.
+    #Replaces those elements with "HIDDEN"
+    arr1.each do |x|
+        if secondString.include? x 
+            i = arr1.index(x)
+            arr1[i] = "HIDDEN"
+        end
     end
+
+
+    #Prints the result
+    puts "#{arr1}"
+
 end
 
-
-#Prints the result
-puts "#{arr1}"
+hackerman
 
 
 
