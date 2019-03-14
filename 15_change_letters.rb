@@ -16,6 +16,18 @@
 # Check your solution by running:
 # ruby 15_change_letters.rb
 
-
+system('clear')
 
 # Your code here
+
+def changeLetters
+
+    puts "Enter your inpuit"
+
+        ans = gets.chomp.downcase
+
+        puts ans.gsub("s","th")
+
+end
+
+changeLetters
