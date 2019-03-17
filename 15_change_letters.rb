@@ -22,11 +22,13 @@ system('clear')
 
 def changeLetters
 
-    puts "Enter your inpuit"
+        #Gets user input
+        puts "Enter your input"
+        ans = gets.chomp
 
-        ans = gets.chomp.downcase
-
+        #Replaces uppper and lowercase s with th
         puts ans.gsub("s","th")
+        puts ans.gsub("S", "TH")
 
 end
 
