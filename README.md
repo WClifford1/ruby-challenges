@@ -1,6 +1,6 @@
 # Ruby Morning Challenges
 
-## Instructions
+# Instructions
 1. Fork and clone
 2. Create a link to this repo: <br/>
    `git remote add upstream https://github.com/CoderAcademy-BRI/ruby-challenges`
@@ -32,3 +32,4 @@
 * 14_hackerman
 * 15_change_letters
 * 16_palindrome
+* 17_combine_hashes
