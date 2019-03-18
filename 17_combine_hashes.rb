@@ -9,12 +9,12 @@
 # If the hash contains strings, the strings for matching keys should
 # be concatenated and the result stored in the combined hash
 
-# Example:
+# Example:#
 # hash1 = { a: 3, b: 5, c: 1}
 # hash2 = { a: 5, b: 2, c: 14}
 # combine_hashes => { a: 8, b: 7, c: 15 }
 
-# Example: 
+# Example: #
 # hash1 = {a: "a", b:"b", c:"c"}
 # hash2 = {a: "a", b:"b", c:"c"}
 # combine_hashes => {a: "aa", b:"bb", c:"cc"}
@@ -24,9 +24,25 @@
 # Test your solution with ruby tests/17_combine_hashes.rb
 
 def combine_hashes(hash1, hash2)
-  hash3 = {}
+  
+    hash3 = {}
 
-  # Your code here
+    hash1.each do |x,y|
+      hash2.each do |a,b|
+        if a == x
+          hash1[x] = y + b
+        end
+      end
+    end
 
-  return hash3
+    hash3 = hash3.merge(hash2)
+
+    hash3 = hash3.merge(hash1)
+  
+    return hash3
+    
 end
+
+
+
+
