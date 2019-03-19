@@ -3,8 +3,9 @@ require_relative '../16_palindrome'
 
 class PalindromeTest < Test::Unit::TestCase
     def testPalindrome
-    assert_equal(true, palindrome("Mom"))
-    assert_equal(false, palindrome("hellO"))
+    assert_true(palindrome("Mom"))
+    assert_false(palindrome("hellO"))
+    assert_false(palindrome(""))
   end
 end
 

@@ -22,10 +22,8 @@
 
 def palindrome(string)
 
-  string.downcase!
-  return true if string == string.reverse
-  else return false
-    
+
+ !string.empty? ? string.downcase == string.downcase.reverse : false
 
 end
 
