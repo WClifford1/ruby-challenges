@@ -22,7 +22,7 @@
 
 def palindrome(string)
 
-
+  string.downcase!
   return true if string == string.reverse
   else return false
     
