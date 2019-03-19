@@ -16,7 +16,6 @@
 # Check your solution by running:
 # ruby 15_change_letters.rb
 
-system('clear')
 
 # Your code here
 
