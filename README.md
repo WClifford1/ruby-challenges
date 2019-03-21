@@ -36,3 +36,7 @@
 * 16_palindrome
 * 17_combine_hashes
 * 18_find_errors
+<<<<<<< HEAD
+=======
+* 19_balanced_number
+>>>>>>> 34341dc172d935d150f8aa9b4afd5af66d9ec66b
