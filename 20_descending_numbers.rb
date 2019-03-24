@@ -15,11 +15,24 @@
 #Input: 145263 Output: 654321
 #Input: 1254859723 Output: 9875543221
 
-def descending_order(n)
-    # Your code goes here
-end
+#def descending_order(n)
+    
+    n = 1234
+   
+    n = n.to_s
+
+    arr = n.chars
+
+    arr.each do |x|
+        x = x.to_i
+        p n
+    end
+
+
+
+#end
 
 # Test your code here
-descending_order(1)
+#descending_order(1)
 
 # Add some interesting test cases that test edge cases
