@@ -27,9 +27,9 @@ def descending_order(n)
         x = x.to_i
     end
 
-    arr = arr.sort.reverse.join
+    p arr.sort.reverse.join
     
-    p arr
+    
 
 end
 
