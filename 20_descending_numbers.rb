@@ -17,8 +17,7 @@
 
 def descending_order(n)
     
-    n = n.to_s
-    n = n.chars
+    n = n.to_s.chars
     arr = []
     n.each do |x|
         arr.push(x.to_i)
@@ -28,10 +27,8 @@ def descending_order(n)
         x = x.to_i
     end
 
-    arr = arr.sort.reverse
-
-    arr = arr.join
-
+    arr = arr.sort.reverse.join
+    
     p arr
 
 end
