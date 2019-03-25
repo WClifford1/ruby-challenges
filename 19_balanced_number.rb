@@ -48,82 +48,25 @@
 # Note : The middle digit(s) are 02.
 
 def balanced_num(number)
-    # Your code goes here
 
-    #Push each number into an array, each number as an element and interger datatype
-    number = number.to_s
-    number = number.chars
-    arr = []
-    arr2 = []
-
-    number.each do |x|
-        arr.push(x.to_i)
-    end
-
-
-    #If the number has an odd length do this:
-    if arr.length % 2 == 1
-
-        
-
-        #y is the index number to use when iterating through the hash
-        y = (arr.length - 1) / 2
-
-        #The sum variables will be counters that increment relative to the value of the y element.
-        sum = 0
-        sum2 = 0
-
-        #This will increment the counter for the first half of the array
-        arr.each_with_index do |var1, var2|
-            if var2 > y
-                sum += var1
-            end
-        end
-
-        #This will increment the counter for the second half of the array
-        arr.each_with_index do |var1, var2|
-            if var2 < y
-                sum2 += var1
-            end
-        end
-
-
-        #If the counters are equal to each other the number will be balanced
-        if sum == sum2
-            "Balanced"
-        else 
-            "Not Balanced"
-        end
-
+    #Push each interger in number as an element in an array. Reassign as number.
+    number = number.to_s.chars.map(&:to_i)
     
-
-    #If the number has an even length do this:
-    else arr.length % 2 == 0
-        sum = 0
-        sum2 = 0
-        y = (arr.length / 2)
-
-        arr.each_with_index do |var1, var2|
-            if var2 > y
-                sum += var1
-            end
+    #The sum variables will be used as counters later on
+    sum = sum2 = 0
+   
+    number.each_with_index do |x, y|
+        if number.length % 2 == 1 && y > (number.length - 1) / 2 || number.length % 2 == 0 && y > number.length / 2
+            sum += x
+        elsif number.length % 2 == 1 && y < (number.length - 1) / 2 || number.length % 2 == 0 && y < number.length / 2 -1
+            sum2 += x
         end
-
-        #Have to use y-1 here to account for the 0 index
-        arr.each_with_index do |var1, var2|
-            if var2 < (y-1)
-                sum2 += var1
-            end
-        end
-
-        if sum == sum2
-            "Balanced"
-        else 
-            "Not Balanced"
-        end
-
     end
 
+    if sum == sum2
+        "Balanced"
+    else 
+        "Not Balanced"
+    end
+    
 end
-
-
