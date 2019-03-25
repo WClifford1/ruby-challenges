@@ -55,14 +55,20 @@ def balanced_num(number)
     #The sum variables will be used as counters later on
     sum = sum2 = 0
    
+    #iterate each element and it's respective index
     number.each_with_index do |x, y|
+        #If it is an odd number and the first half OR if it is an even number and the first half:
+        #Add the value of the elements to the fist counter
         if number.length % 2 == 1 && y > (number.length - 1) / 2 || number.length % 2 == 0 && y > number.length / 2
             sum += x
+        #If it is an odd number and the second half OR if it is an even number and the first half:
+        #Add the value of the elements to the seconds
         elsif number.length % 2 == 1 && y < (number.length - 1) / 2 || number.length % 2 == 0 && y < number.length / 2 -1
             sum2 += x
         end
     end
 
+    #A simple ternery for the return
     sum == sum2 ? "Balanced" : "Not Balanced"
 
 end
