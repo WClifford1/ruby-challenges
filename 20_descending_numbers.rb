@@ -16,11 +16,11 @@
 #Input: 1254859723 Output: 9875543221
 
 def descending_order(n)
-    
-  
-    p n.to_s.chars.map(&:to_i).sort.reverse.join
 
-    
+
+    p n.to_s.chars.map(&:to_i).sort.reverse.join.to_i
+
+
 end
 
 #Test your code here
