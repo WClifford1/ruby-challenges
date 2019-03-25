@@ -57,14 +57,14 @@ def balanced_num(number)
    
     #iterate each element and it's respective index
     number.each_with_index do |x, y|
+
         #If it is an odd number and the first half OR if it is an even number and the first half:
-        #Add the value of the elements to the fist counter
         if number.length % 2 == 1 && y > (number.length - 1) / 2 || number.length % 2 == 0 && y > number.length / 2
-            sum += x
-        #If it is an odd number and the second half OR if it is an even number and the first half:
-        #Add the value of the elements to the seconds
+            sum += x #Add the value of the elements to the fist counter
+        
+            #If it is an odd number and the second half OR if it is an even number and the first half:
         elsif number.length % 2 == 1 && y < (number.length - 1) / 2 || number.length % 2 == 0 && y < number.length / 2 -1
-            sum2 += x
+            sum2 += x #Add the value of the elements to the seconds
         end
     end
 
