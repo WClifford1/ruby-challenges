@@ -63,10 +63,6 @@ def balanced_num(number)
         end
     end
 
-    if sum == sum2
-        "Balanced"
-    else 
-        "Not Balanced"
-    end
-    
+    sum == sum2 ? "Balanced" : "Not Balanced"
+
 end
