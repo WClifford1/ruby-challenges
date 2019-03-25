@@ -23,14 +23,8 @@ def descending_order(n)
         arr.push(x.to_i)
     end
 
-    arr.each do |x|
-        x = x.to_i
-    end
-
     p arr.sort.reverse.join
     
-    
-
 end
 
 #Test your code here
