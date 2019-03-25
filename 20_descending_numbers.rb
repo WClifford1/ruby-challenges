@@ -17,13 +17,9 @@
 
 def descending_order(n)
     
-    n = n.to_s.chars
-    arr = []
-    n.each do |x|
-        arr.push(x.to_i)
-    end
+  
+    p n.to_s.chars.map(&:to_i).sort.reverse.join
 
-    p arr.sort.reverse.join
     
 end
 
