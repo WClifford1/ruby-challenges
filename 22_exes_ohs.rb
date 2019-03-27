@@ -33,82 +33,30 @@
 # Expected output: false
 
 def exes_and_ohs(input)
-
-# Your code goes here
-
-arr = []
-arr2 = []
-
-string = input
-string = string.downcase.chars.sort
-
-string2 = string.uniq
-
-ex = string2[0]
-oh = string2[1]
-
-if string2.length == 2
     
-    string.each do |x|
-        if x == ex
-            arr.push(x)
+    arr = []
+    arr2 = []
+    
+    input = input.downcase.chars.sort
+    
+    input2 = input.uniq
+    
+    ex = input2[0]
+    oh = input2[1]
+    
+    if input2.length == 2
+        
+        input.each do |x|
+            if x == ex
+                arr.push(x)
+            elsif x == oh
+                arr2.push(x)
+            end
         end
+        
+        arr.length == arr2.length ? true : false
+        
+    else
+        return false
     end
-    
-    string.each do |x|
-        if x == oh
-            arr2.push(x)
-        end
-    end
-    
-
-    arr.length == arr2.length ? true : false
-
-else
-    return false
-    
 end
-end
-
-
-
-
-
-# divide = string.length / 2
-# arr = []
-# arr2 = []
-# p divide
-# sum = 0
-
-
-
-# string.each_with_index do |x,y|
-#     if y < divide
-#         arr.push(x)
-#     elsif y >= divide
-#         arr2.push(x)
-#     end
-# end
-
-# p arr
-# p arr2
-
-# if string.length % 2 == 0 && string.uniq.length == 2
-
-# puts "true"
-# p string
-# else string.length % 2 == 1
-
-# puts "false"
-# p string
-# end
-# if string.count == 2
-
-# return true
-
-
-# else return false
-
-# end
-
-# end
