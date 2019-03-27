@@ -25,35 +25,32 @@
 # as it would have to go over every character. Can you return on the first 
 # non-repeat, without checking every other letter?
 
-# def first_non_repeating(input)
-#     # Your code goes here
-# end
+def first_non_repeating(input)
 
-# Test your code here
-# puts first_non_repeating("aaaabbbcccdeeefgh")
-# puts first_non_repeating("wwwhhhggge")
-# puts first_non_repeating("wwwhhhggg")
-
-# Assign an empty array that will be used later
-arr = []
-
-input = "aaaabbbcccdeeefgh"
-
-# Put the input string in an array of characters
-input = input.chars
-
-# Iterate through the array. If the occurences of the element is greater than one then push it to a new array.
-input.each do |x|
-    if input.count(x) < 2
-    arr.push(x)
+    # Assign an empty array that will be used later
+    arr = []
+    
+    # Put the input string in an array of characters
+    input = input.chars
+    
+    # Iterate through the array. If the occurences of the element is greater than one then push it to a new array.
+    input.each do |x|
+        if input.count(x) < 2
+            arr.push(x)
+        end
+    end 
+    
+    # If the new array's length is greater than or equal to 1 return the first element
+    if arr.length >= 1
+        return arr[0]
+        
+        # If the new array's length is equal to 0 then return false.
+    else return false
+        
     end
 end
 
-# If the new array's length is greater than or equal to 1 print the first element
-if arr.length >= 1
-
-p arr[0]
-
-# If the new array's length is equal to 0 then return false.
-else puts "false"
-end
+# Test your code here
+puts first_non_repeating("aaaabbbcccdeeefgh")
+puts first_non_repeating("wwwhhhggge")
+puts first_non_repeating("wwwhhhggg")
