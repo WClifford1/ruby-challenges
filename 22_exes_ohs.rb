@@ -33,19 +33,19 @@
 # Expected output: false
 
 def exes_and_ohs(input)
-    
+    #Assign two empty arrays which will be used later
     arr = []
     arr2 = []
-    
+    #Turn input into a sorted array
     input = input.downcase.chars.sort
-    
+    #Get the number of unique charactres in the array
     input2 = input.uniq
-    
+    #Assign variables to the first two elements in the array
     ex = input2[0]
     oh = input2[1]
-    
+    #If the number of unique characters in the array is 2 do this:
     if input2.length == 2
-        
+        #Iterate through the array, take elements with the values of ex and oh and push them to seperate arrays
         input.each do |x|
             if x == ex
                 arr.push(x)
@@ -53,7 +53,7 @@ def exes_and_ohs(input)
                 arr2.push(x)
             end
         end
-        
+        #The only way true can be returned is if the lengths of the new arrays are equal
         arr.length == arr2.length ? true : false
         
     else
