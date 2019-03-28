@@ -26,31 +26,28 @@
 # non-repeat, without checking every other letter?
 
 def first_non_repeating(input)
-
-    # Assign an empty array that will be used later
-    arr = []
     
     # Put the input string in an array of characters
     input = input.chars
     
-    # Iterate through the array. If the occurences of the element is greater than one then push it to a new array.
+    # Iterate through the array. If the occurences of the element is greater than one then delete it.
     input.each do |x|
-        if input.count(x) < 2
-            arr.push(x)
+        if input.count(x) > 1
+            input.delete(x)
         end
     end 
-    
-    # If the new array's length is greater than or equal to 1 return the first element
-    if arr.length >= 1
-        return arr[0]
+
+    # If the array's length is greater than or equal to 1 return the first element
+    if input.length >= 1
+        return input[0]
         
-        # If the new array's length is equal to 0 then return false.
+        # If the array's length is equal to 0 then return false.
     else return false
         
     end
 end
 
 # Test your code here
-puts first_non_repeating("aaaabbbcccdeeefgh")
+puts first_non_repeating("aaaabbbcccdeeegzh")
 puts first_non_repeating("wwwhhhggge")
 puts first_non_repeating("wwwhhhggg")
