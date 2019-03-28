@@ -1,4 +1,4 @@
-# Find the first non-repeated character
+## Find the first non-repeated character
 # Difficulty: medium
 
 # String methods are an incredibly powerful way to 
