@@ -26,7 +26,10 @@ def isogram?(input)
     end
     
     return answer
+
+    # input.each { |x| if input.count(x) > 1 ? answer = true : answer = false }
+    # return answer
     
 end
-puts isogram?("hello") #should return false
+puts isogram?("helol") #should return false
 puts isogram?("scary") #should return true

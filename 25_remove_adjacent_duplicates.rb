@@ -16,20 +16,20 @@
 def remove_adjacent_duplicates(input)
     
     #Turn the string to an array
-    input = input.chars
+    # input = input.chars
     
     #Use the bubble-sort method to delete adjacent elements in the array
-    input.length.times do
-        index = 0
-        input.each do |element|
-            if input[index] == input[index + 1]
-                input.delete_at(index + 1)
-            end
-            (index += 1) if (index < input.length - 2)
-        end
-    end
+    # input.length.times do
+    #     index = 0
+    #     input.each do |element|
+    #         if input[index] == input[index + 1]
+    #             input.delete_at(index + 1)
+    #         end
+    #         (index += 1) if (index < input.length - 2)
+    #     end
+    # end
 
-    return input.join
+    return input.squeeze
     
 end
 
