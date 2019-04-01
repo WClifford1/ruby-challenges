@@ -1,6 +1,6 @@
 # Remove adjacent duplicates
 
-# Sometimes we have input with adjacent duplicates, and we want to remove
+## Sometimes we have input with adjacent duplicates, and we want to remove
 # those adjacent duplicates, keeping the original input in order.
 
 # Create a method, which takes a string argument and returns a string
