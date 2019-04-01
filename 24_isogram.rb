@@ -1,7 +1,7 @@
 # Isogram
 # Difficulty: medium
 
-# An isogram is a word that has no repeatting letters; 
+## An isogram is a word that has no repeatting letters; 
 # consecutive or non-consecutive.
 
 # Implement a method that determines whether a string 
