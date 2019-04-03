@@ -29,13 +29,9 @@ def good_walk(walk)
 
     answer = false
 
-    if walk.length == 10
-
-        walk.each do |x|
-            if walk.count('n') == walk.count('s') and walk.count('w') == walk.count('e')
-                answer = true  
-            end
-        end
+    if walk.length == 10 and if walk.count('n') == walk.count('s') and walk.count('w') == walk.count('e')
+        answer = true  
+    end
     end
 
     return answer
