@@ -29,13 +29,15 @@ def in_array_strict? (string, arr, strict)
     inArr = false
     
     arr.each do |x|
-        if strict == true && x == string ? inArr = true : inArr = false
-        elsif strict == false && x.downcase == string.downcase ? inArr = true : inArr = false
+        if strict == true && x == string
+             inArr = true
+        elsif strict == false && x.downcase == string.downcase
+             inArr = true
         end
     end
     
     return inArr
     
 end
-# p in_array_strict?("Hello", ["hi", "howdy", "Hello"], true)
-p in_array_strict?("HeLLo", ["hi", "howdy", "HeLLo"], false)
+p in_array_strict?("HelLo", ["hi", "howdy", "Hello"], true)
+p in_array_strict?("HeLlo", ["hi", "howdy", "HeLLo"], false)
