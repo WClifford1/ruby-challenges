@@ -48,7 +48,6 @@
 * 28_good_walk
 * 29_shortest_walk
 * 30_spin_words
-<<<<<<< HEAD
-=======
 * 31_missing_letter
->>>>>>> f2b33863ae6fe937126f3c6091cac15beffa7874
+* 31_missing_letter
+* 32_interesting_number

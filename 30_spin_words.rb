@@ -16,6 +16,7 @@
 # Tests provided use rspec
 
 def spin_words (words)
+    
     words = words.split
 
     words.map do |x|
