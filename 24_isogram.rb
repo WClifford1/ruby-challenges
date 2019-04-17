@@ -20,6 +20,7 @@ def isogram?(input)
     input = input.downcase.chars
     
     input.each do |x|
+        
         if input.count(x) > 1
             answer = false
         end

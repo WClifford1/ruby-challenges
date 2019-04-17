@@ -49,5 +49,5 @@
 * 29_shortest_walk
 * 30_spin_words
 * 31_missing_letter
-* 31_missing_letter
 * 32_interesting_number
+* 33_digital_root
