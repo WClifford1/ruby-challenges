@@ -53,3 +53,8 @@
 * 33_digital_root
 * 34_prime_number
 * 35_group_by_owners
+<<<<<<< HEAD
+=======
+* 36_binary_flip
+* 37_caesar_cipher
+>>>>>>> 0c6ca02eae92992d20606e595fd80a9b4db239e1

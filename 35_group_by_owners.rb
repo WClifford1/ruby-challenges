@@ -34,4 +34,3 @@ def group_by_owners(input)
     return newhash
 
 end
-
